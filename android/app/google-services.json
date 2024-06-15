@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "131890966562",
+    "project_id": "green-paws-1af81",
+    "storage_bucket": "green-paws-1af81.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:131890966562:android:efbde774236ac0d17d5a7b",
+        "android_client_info": {
+          "package_name": "com.mycompany.greenpaws"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBq6hTEh6r6TmCiQB_9Mv82HlCIGBi6Sm8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
