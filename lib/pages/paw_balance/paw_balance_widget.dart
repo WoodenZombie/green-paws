@@ -263,7 +263,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                       BorderRadius.circular(
                                                           12.0),
                                                   child: Image.network(
-                                                    'https://www.screen.studio/_next/static/media/logo-transparent.681d19be.png',
+                                                    'https://storage.needpix.com/rsynced_images/cat-1001435_1280.png',
                                                     width: 44.0,
                                                     height: 44.0,
                                                     fit: BoxFit.cover,
@@ -286,7 +286,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                               .start,
                                                       children: [
                                                         Text(
-                                                          'Some company',
+                                                          'Company Name',
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .bodyLarge
@@ -306,7 +306,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                                       0.0,
                                                                       0.0),
                                                           child: Text(
-                                                            'Some discount',
+                                                            '5% discount for pet-related product',
                                                             style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .labelSmall
@@ -379,7 +379,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                             BoxDecoration(
                                                           color: FlutterFlowTheme
                                                                   .of(context)
-                                                              .accent2,
+                                                              .primary,
                                                           borderRadius:
                                                               BorderRadius
                                                                   .circular(
@@ -411,6 +411,9 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                                   .override(
                                                                     fontFamily:
                                                                         'Readex Pro',
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .info,
                                                                     letterSpacing:
                                                                         0.0,
                                                                   ),
@@ -457,7 +460,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                       BorderRadius.circular(
                                                           12.0),
                                                   child: Image.network(
-                                                    'https://www.screen.studio/_next/static/media/logo-transparent.681d19be.png',
+                                                    'https://storage.needpix.com/rsynced_images/cat-1001435_1280.png',
                                                     width: 44.0,
                                                     height: 44.0,
                                                     fit: BoxFit.cover,
@@ -480,7 +483,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                               .start,
                                                       children: [
                                                         Text(
-                                                          'Some company',
+                                                          'Company Name',
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .bodyLarge
@@ -500,7 +503,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                                       0.0,
                                                                       0.0),
                                                           child: Text(
-                                                            'Some discount',
+                                                            '15% discount for any product',
                                                             style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .labelSmall
@@ -545,7 +548,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                                       0.0,
                                                                       0.0),
                                                           child: Text(
-                                                            '50',
+                                                            '175',
                                                             style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .bodyLarge
@@ -573,7 +576,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                             BoxDecoration(
                                                           color: FlutterFlowTheme
                                                                   .of(context)
-                                                              .accent2,
+                                                              .primary,
                                                           borderRadius:
                                                               BorderRadius
                                                                   .circular(
@@ -605,6 +608,9 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                                   .override(
                                                                     fontFamily:
                                                                         'Readex Pro',
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .info,
                                                                     letterSpacing:
                                                                         0.0,
                                                                   ),
@@ -671,7 +677,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                       BorderRadius.circular(
                                                           12.0),
                                                   child: Image.network(
-                                                    'https://www.screen.studio/_next/static/media/logo-transparent.681d19be.png',
+                                                    'https://storage.needpix.com/rsynced_images/cat-1001435_1280.png',
                                                     width: 44.0,
                                                     height: 44.0,
                                                     fit: BoxFit.cover,
@@ -694,7 +700,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                               .start,
                                                       children: [
                                                         Text(
-                                                          'Some company',
+                                                          'Event Name',
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .bodyLarge
@@ -714,7 +720,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                                       0.0,
                                                                       0.0),
                                                           child: Text(
-                                                            'Some product',
+                                                            'Get a free entrance to the event',
                                                             style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .labelSmall
@@ -759,7 +765,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                                       0.0,
                                                                       0.0),
                                                           child: Text(
-                                                            '50',
+                                                            '780',
                                                             style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .bodyLarge
@@ -787,7 +793,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                             BoxDecoration(
                                                           color: FlutterFlowTheme
                                                                   .of(context)
-                                                              .accent2,
+                                                              .tertiary,
                                                           borderRadius:
                                                               BorderRadius
                                                                   .circular(
@@ -795,7 +801,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                           border: Border.all(
                                                             color: FlutterFlowTheme
                                                                     .of(context)
-                                                                .primary,
+                                                                .tertiary,
                                                             width: 2.0,
                                                           ),
                                                         ),
@@ -819,6 +825,9 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                                   .override(
                                                                     fontFamily:
                                                                         'Readex Pro',
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .error,
                                                                     letterSpacing:
                                                                         0.0,
                                                                   ),
@@ -865,7 +874,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                       BorderRadius.circular(
                                                           12.0),
                                                   child: Image.network(
-                                                    'https://www.screen.studio/_next/static/media/logo-transparent.681d19be.png',
+                                                    'https://storage.needpix.com/rsynced_images/cat-1001435_1280.png',
                                                     width: 44.0,
                                                     height: 44.0,
                                                     fit: BoxFit.cover,
@@ -888,7 +897,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                               .start,
                                                       children: [
                                                         Text(
-                                                          'Some company',
+                                                          'Vet clinic',
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .bodyLarge
@@ -908,7 +917,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                                       0.0,
                                                                       0.0),
                                                           child: Text(
-                                                            'Some product',
+                                                            'Get a free examination for your pet',
                                                             style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .labelSmall
@@ -981,7 +990,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                             BoxDecoration(
                                                           color: FlutterFlowTheme
                                                                   .of(context)
-                                                              .accent3,
+                                                              .tertiary,
                                                           borderRadius:
                                                               BorderRadius
                                                                   .circular(
@@ -1013,6 +1022,9 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                                   .override(
                                                                     fontFamily:
                                                                         'Readex Pro',
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .error,
                                                                     letterSpacing:
                                                                         0.0,
                                                                   ),
@@ -1059,7 +1071,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                       BorderRadius.circular(
                                                           12.0),
                                                   child: Image.network(
-                                                    'https://www.screen.studio/_next/static/media/logo-transparent.681d19be.png',
+                                                    'https://storage.needpix.com/rsynced_images/cat-1001435_1280.png',
                                                     width: 44.0,
                                                     height: 44.0,
                                                     fit: BoxFit.cover,
@@ -1082,7 +1094,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                               .start,
                                                       children: [
                                                         Text(
-                                                          'ScreenStudio App',
+                                                          'Bike Share Company',
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .bodyLarge
@@ -1102,7 +1114,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                                       0.0,
                                                                       0.0),
                                                           child: Text(
-                                                            'Paid on: May, 4th 2023',
+                                                            'Free bike use for 15 minutes',
                                                             style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .labelSmall
@@ -1122,18 +1134,44 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                   mainAxisSize:
                                                       MainAxisSize.max,
                                                   crossAxisAlignment:
-                                                      CrossAxisAlignment.end,
+                                                      CrossAxisAlignment.center,
                                                   children: [
-                                                    Text(
-                                                      '\$24.99',
-                                                      style: FlutterFlowTheme
-                                                              .of(context)
-                                                          .bodyLarge
-                                                          .override(
-                                                            fontFamily:
-                                                                'Readex Pro',
-                                                            letterSpacing: 0.0,
+                                                    Row(
+                                                      mainAxisSize:
+                                                          MainAxisSize.max,
+                                                      mainAxisAlignment:
+                                                          MainAxisAlignment
+                                                              .center,
+                                                      children: [
+                                                        FaIcon(
+                                                          FontAwesomeIcons.paw,
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .secondaryText,
+                                                          size: 16.0,
+                                                        ),
+                                                        Padding(
+                                                          padding:
+                                                              const EdgeInsetsDirectional
+                                                                  .fromSTEB(
+                                                                      5.0,
+                                                                      0.0,
+                                                                      0.0,
+                                                                      0.0),
+                                                          child: Text(
+                                                            '125',
+                                                            style: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .bodyLarge
+                                                                .override(
+                                                                  fontFamily:
+                                                                      'Readex Pro',
+                                                                  letterSpacing:
+                                                                      0.0,
+                                                                ),
                                                           ),
+                                                        ),
+                                                      ],
                                                     ),
                                                     Padding(
                                                       padding:
@@ -1147,9 +1185,8 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                         height: 32.0,
                                                         decoration:
                                                             BoxDecoration(
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .accent1,
+                                                          color:
+                                                              const Color(0xFF756CF6),
                                                           borderRadius:
                                                               BorderRadius
                                                                   .circular(
@@ -1157,7 +1194,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                           border: Border.all(
                                                             color: FlutterFlowTheme
                                                                     .of(context)
-                                                                .primary,
+                                                                .success,
                                                             width: 2.0,
                                                           ),
                                                         ),
@@ -1183,7 +1220,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                                         'Readex Pro',
                                                                     color: FlutterFlowTheme.of(
                                                                             context)
-                                                                        .primary,
+                                                                        .info,
                                                                     letterSpacing:
                                                                         0.0,
                                                                   ),
@@ -1230,7 +1267,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                       BorderRadius.circular(
                                                           12.0),
                                                   child: Image.network(
-                                                    'https://cdn.mos.cms.futurecdn.net/SDDw7CnuoUGax6x9mTo7dd.jpg',
+                                                    'https://storage.needpix.com/rsynced_images/cat-1001435_1280.png',
                                                     width: 44.0,
                                                     height: 44.0,
                                                     fit: BoxFit.cover,
@@ -1253,7 +1290,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                               .start,
                                                       children: [
                                                         Text(
-                                                          'Slack Ltd',
+                                                          'Company Name',
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .bodyLarge
@@ -1273,7 +1310,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                                       0.0,
                                                                       0.0),
                                                           child: Text(
-                                                            'Paid on: May, 4th 2023',
+                                                            'Get a product for free',
                                                             style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .labelSmall
@@ -1293,18 +1330,44 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                   mainAxisSize:
                                                       MainAxisSize.max,
                                                   crossAxisAlignment:
-                                                      CrossAxisAlignment.end,
+                                                      CrossAxisAlignment.center,
                                                   children: [
-                                                    Text(
-                                                      '\$24.99',
-                                                      style: FlutterFlowTheme
-                                                              .of(context)
-                                                          .bodyLarge
-                                                          .override(
-                                                            fontFamily:
-                                                                'Readex Pro',
-                                                            letterSpacing: 0.0,
+                                                    Row(
+                                                      mainAxisSize:
+                                                          MainAxisSize.max,
+                                                      mainAxisAlignment:
+                                                          MainAxisAlignment
+                                                              .center,
+                                                      children: [
+                                                        FaIcon(
+                                                          FontAwesomeIcons.paw,
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .secondaryText,
+                                                          size: 16.0,
+                                                        ),
+                                                        Padding(
+                                                          padding:
+                                                              const EdgeInsetsDirectional
+                                                                  .fromSTEB(
+                                                                      5.0,
+                                                                      0.0,
+                                                                      0.0,
+                                                                      0.0),
+                                                          child: Text(
+                                                            '1300',
+                                                            style: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .bodyLarge
+                                                                .override(
+                                                                  fontFamily:
+                                                                      'Readex Pro',
+                                                                  letterSpacing:
+                                                                      0.0,
+                                                                ),
                                                           ),
+                                                        ),
+                                                      ],
                                                     ),
                                                     Padding(
                                                       padding:
@@ -1320,7 +1383,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                             BoxDecoration(
                                                           color: FlutterFlowTheme
                                                                   .of(context)
-                                                              .accent1,
+                                                              .success,
                                                           borderRadius:
                                                               BorderRadius
                                                                   .circular(
@@ -1328,7 +1391,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                           border: Border.all(
                                                             color: FlutterFlowTheme
                                                                     .of(context)
-                                                                .primary,
+                                                                .success,
                                                             width: 2.0,
                                                           ),
                                                         ),
@@ -1354,7 +1417,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                                         'Readex Pro',
                                                                     color: FlutterFlowTheme.of(
                                                                             context)
-                                                                        .primary,
+                                                                        .info,
                                                                     letterSpacing:
                                                                         0.0,
                                                                   ),
@@ -1414,7 +1477,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                 borderRadius:
                                                     BorderRadius.circular(12.0),
                                                 child: Image.network(
-                                                  'https://www.screen.studio/_next/static/media/logo-transparent.681d19be.png',
+                                                  'https://storage.needpix.com/rsynced_images/cat-1001435_1280.png',
                                                   width: 44.0,
                                                   height: 44.0,
                                                   fit: BoxFit.cover,
@@ -1436,7 +1499,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                             .start,
                                                     children: [
                                                       Text(
-                                                        'ScreenStudio App',
+                                                        'Company Name',
                                                         style:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -1457,7 +1520,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                                     0.0,
                                                                     0.0),
                                                         child: Text(
-                                                          'Paid on: May, 4th 2023',
+                                                          '5% discount for pet-related product',
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .labelSmall
@@ -1475,19 +1538,48 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                               ),
                                               Column(
                                                 mainAxisSize: MainAxisSize.max,
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.center,
                                                 crossAxisAlignment:
-                                                    CrossAxisAlignment.end,
+                                                    CrossAxisAlignment.center,
                                                 children: [
-                                                  Text(
-                                                    '\$24.99',
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .bodyLarge
-                                                        .override(
-                                                          fontFamily:
-                                                              'Readex Pro',
-                                                          letterSpacing: 0.0,
+                                                  Row(
+                                                    mainAxisSize:
+                                                        MainAxisSize.max,
+                                                    mainAxisAlignment:
+                                                        MainAxisAlignment
+                                                            .center,
+                                                    children: [
+                                                      FaIcon(
+                                                        FontAwesomeIcons.paw,
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .secondaryText,
+                                                        size: 16.0,
+                                                      ),
+                                                      Padding(
+                                                        padding:
+                                                            const EdgeInsetsDirectional
+                                                                .fromSTEB(
+                                                                    5.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0),
+                                                        child: Text(
+                                                          '50',
+                                                          style: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyLarge
+                                                              .override(
+                                                                fontFamily:
+                                                                    'Readex Pro',
+                                                                letterSpacing:
+                                                                    0.0,
+                                                              ),
                                                         ),
+                                                      ),
+                                                    ],
                                                   ),
                                                   Padding(
                                                     padding:
@@ -1500,14 +1592,14 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .accent2,
+                                                                .primary,
                                                         borderRadius:
                                                             BorderRadius
                                                                 .circular(8.0),
                                                         border: Border.all(
                                                           color: FlutterFlowTheme
                                                                   .of(context)
-                                                              .secondary,
+                                                              .primary,
                                                           width: 2.0,
                                                         ),
                                                       ),
@@ -1531,6 +1623,9 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                                 .override(
                                                                   fontFamily:
                                                                       'Readex Pro',
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .info,
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -1576,7 +1671,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                 borderRadius:
                                                     BorderRadius.circular(12.0),
                                                 child: Image.network(
-                                                  'https://cdn.mos.cms.futurecdn.net/SDDw7CnuoUGax6x9mTo7dd.jpg',
+                                                  'https://storage.needpix.com/rsynced_images/cat-1001435_1280.png',
                                                   width: 44.0,
                                                   height: 44.0,
                                                   fit: BoxFit.cover,
@@ -1598,7 +1693,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                             .start,
                                                     children: [
                                                       Text(
-                                                        'Slack Ltd',
+                                                        'Company Name',
                                                         style:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -1619,7 +1714,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                                     0.0,
                                                                     0.0),
                                                         child: Text(
-                                                          'Paid on: May, 4th 2023',
+                                                          '15% discount for any product',
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .labelSmall
@@ -1637,19 +1732,48 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                               ),
                                               Column(
                                                 mainAxisSize: MainAxisSize.max,
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.center,
                                                 crossAxisAlignment:
-                                                    CrossAxisAlignment.end,
+                                                    CrossAxisAlignment.center,
                                                 children: [
-                                                  Text(
-                                                    '\$24.99',
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .bodyLarge
-                                                        .override(
-                                                          fontFamily:
-                                                              'Readex Pro',
-                                                          letterSpacing: 0.0,
+                                                  Row(
+                                                    mainAxisSize:
+                                                        MainAxisSize.max,
+                                                    mainAxisAlignment:
+                                                        MainAxisAlignment
+                                                            .center,
+                                                    children: [
+                                                      FaIcon(
+                                                        FontAwesomeIcons.paw,
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .secondaryText,
+                                                        size: 16.0,
+                                                      ),
+                                                      Padding(
+                                                        padding:
+                                                            const EdgeInsetsDirectional
+                                                                .fromSTEB(
+                                                                    5.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0),
+                                                        child: Text(
+                                                          '175',
+                                                          style: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyLarge
+                                                              .override(
+                                                                fontFamily:
+                                                                    'Readex Pro',
+                                                                letterSpacing:
+                                                                    0.0,
+                                                              ),
                                                         ),
+                                                      ),
+                                                    ],
                                                   ),
                                                   Padding(
                                                     padding:
@@ -1662,14 +1786,14 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .accent2,
+                                                                .primary,
                                                         borderRadius:
                                                             BorderRadius
                                                                 .circular(8.0),
                                                         border: Border.all(
                                                           color: FlutterFlowTheme
                                                                   .of(context)
-                                                              .secondary,
+                                                              .primary,
                                                           width: 2.0,
                                                         ),
                                                       ),
@@ -1693,6 +1817,9 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                                 .override(
                                                                   fontFamily:
                                                                       'Readex Pro',
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .info,
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -1708,26 +1835,6 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                         ),
                                       ),
                                     ),
-                                  ],
-                                ),
-                                Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
-                                      16.0, 16.0, 0.0, 0.0),
-                                  child: Text(
-                                    'Earlier Invoices',
-                                    style: FlutterFlowTheme.of(context)
-                                        .labelMedium
-                                        .override(
-                                          fontFamily: 'Readex Pro',
-                                          letterSpacing: 0.0,
-                                        ),
-                                  ),
-                                ),
-                                ListView(
-                                  padding: EdgeInsets.zero,
-                                  shrinkWrap: true,
-                                  scrollDirection: Axis.vertical,
-                                  children: [
                                     Padding(
                                       padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 12.0, 16.0, 0.0),
@@ -1758,7 +1865,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                 borderRadius:
                                                     BorderRadius.circular(12.0),
                                                 child: Image.network(
-                                                  'https://cdn.freebiesupply.com/logos/large/2x/dribbble-icon-1-logo-png-transparent.png',
+                                                  'https://storage.needpix.com/rsynced_images/cat-1001435_1280.png',
                                                   width: 44.0,
                                                   height: 44.0,
                                                   fit: BoxFit.cover,
@@ -1780,7 +1887,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                             .start,
                                                     children: [
                                                       Text(
-                                                        'Dribbble LTD.',
+                                                        'Event Name',
                                                         style:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -1801,7 +1908,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                                     0.0,
                                                                     0.0),
                                                         child: Text(
-                                                          'Paid on: May, 4th 2023',
+                                                          'Get a free entrance to the event',
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .labelSmall
@@ -1819,19 +1926,48 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                               ),
                                               Column(
                                                 mainAxisSize: MainAxisSize.max,
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.center,
                                                 crossAxisAlignment:
-                                                    CrossAxisAlignment.end,
+                                                    CrossAxisAlignment.center,
                                                 children: [
-                                                  Text(
-                                                    '\$500.00',
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .bodyLarge
-                                                        .override(
-                                                          fontFamily:
-                                                              'Readex Pro',
-                                                          letterSpacing: 0.0,
+                                                  Row(
+                                                    mainAxisSize:
+                                                        MainAxisSize.max,
+                                                    mainAxisAlignment:
+                                                        MainAxisAlignment
+                                                            .center,
+                                                    children: [
+                                                      FaIcon(
+                                                        FontAwesomeIcons.paw,
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .secondaryText,
+                                                        size: 16.0,
+                                                      ),
+                                                      Padding(
+                                                        padding:
+                                                            const EdgeInsetsDirectional
+                                                                .fromSTEB(
+                                                                    5.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0),
+                                                        child: Text(
+                                                          '780',
+                                                          style: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyLarge
+                                                              .override(
+                                                                fontFamily:
+                                                                    'Readex Pro',
+                                                                letterSpacing:
+                                                                    0.0,
+                                                              ),
                                                         ),
+                                                      ),
+                                                    ],
                                                   ),
                                                   Padding(
                                                     padding:
@@ -1844,7 +1980,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .accent3,
+                                                                .tertiary,
                                                         borderRadius:
                                                             BorderRadius
                                                                 .circular(8.0),
@@ -1875,6 +2011,9 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                                 .override(
                                                                   fontFamily:
                                                                       'Readex Pro',
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .error,
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -1920,7 +2059,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                 borderRadius:
                                                     BorderRadius.circular(12.0),
                                                 child: Image.network(
-                                                  'https://app.flutterflow.io/icons/ff-icon-192.png',
+                                                  'https://storage.needpix.com/rsynced_images/cat-1001435_1280.png',
                                                   width: 44.0,
                                                   height: 44.0,
                                                   fit: BoxFit.cover,
@@ -1942,7 +2081,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                             .start,
                                                     children: [
                                                       Text(
-                                                        'FlutterFlow',
+                                                        'Vet clinic',
                                                         style:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -1963,7 +2102,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                                     0.0,
                                                                     0.0),
                                                         child: Text(
-                                                          'Paid on: May, 4th 2023',
+                                                          'Get a free examination for your pet',
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .labelSmall
@@ -1981,19 +2120,48 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                               ),
                                               Column(
                                                 mainAxisSize: MainAxisSize.max,
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.center,
                                                 crossAxisAlignment:
-                                                    CrossAxisAlignment.end,
+                                                    CrossAxisAlignment.center,
                                                 children: [
-                                                  Text(
-                                                    '\$500.00',
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .bodyLarge
-                                                        .override(
-                                                          fontFamily:
-                                                              'Readex Pro',
-                                                          letterSpacing: 0.0,
+                                                  Row(
+                                                    mainAxisSize:
+                                                        MainAxisSize.max,
+                                                    mainAxisAlignment:
+                                                        MainAxisAlignment
+                                                            .center,
+                                                    children: [
+                                                      FaIcon(
+                                                        FontAwesomeIcons.paw,
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .secondaryText,
+                                                        size: 16.0,
+                                                      ),
+                                                      Padding(
+                                                        padding:
+                                                            const EdgeInsetsDirectional
+                                                                .fromSTEB(
+                                                                    5.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0),
+                                                        child: Text(
+                                                          '600',
+                                                          style: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyLarge
+                                                              .override(
+                                                                fontFamily:
+                                                                    'Readex Pro',
+                                                                letterSpacing:
+                                                                    0.0,
+                                                              ),
                                                         ),
+                                                      ),
+                                                    ],
                                                   ),
                                                   Padding(
                                                     padding:
@@ -2006,7 +2174,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .accent3,
+                                                                .tertiary,
                                                         borderRadius:
                                                             BorderRadius
                                                                 .circular(8.0),
@@ -2037,6 +2205,9 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                                 .override(
                                                                   fontFamily:
                                                                       'Readex Pro',
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .error,
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -2060,19 +2231,6 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                               mainAxisSize: MainAxisSize.max,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
-                                      16.0, 16.0, 0.0, 0.0),
-                                  child: Text(
-                                    'Earlier Invoices',
-                                    style: FlutterFlowTheme.of(context)
-                                        .labelMedium
-                                        .override(
-                                          fontFamily: 'Readex Pro',
-                                          letterSpacing: 0.0,
-                                        ),
-                                  ),
-                                ),
                                 ListView(
                                   padding: EdgeInsets.zero,
                                   shrinkWrap: true,
@@ -2108,7 +2266,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                 borderRadius:
                                                     BorderRadius.circular(12.0),
                                                 child: Image.network(
-                                                  'https://cdn.freebiesupply.com/logos/large/2x/dribbble-icon-1-logo-png-transparent.png',
+                                                  'https://storage.needpix.com/rsynced_images/cat-1001435_1280.png',
                                                   width: 44.0,
                                                   height: 44.0,
                                                   fit: BoxFit.cover,
@@ -2130,7 +2288,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                             .start,
                                                     children: [
                                                       Text(
-                                                        'Dribbble LTD.',
+                                                        'Bike Share Company',
                                                         style:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -2151,7 +2309,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                                     0.0,
                                                                     0.0),
                                                         child: Text(
-                                                          'Paid on: May, 4th 2023',
+                                                          'Free bike use for 15 minutes',
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .labelSmall
@@ -2172,16 +2330,40 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                 crossAxisAlignment:
                                                     CrossAxisAlignment.end,
                                                 children: [
-                                                  Text(
-                                                    '\$500.00',
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .bodyLarge
-                                                        .override(
-                                                          fontFamily:
-                                                              'Readex Pro',
-                                                          letterSpacing: 0.0,
+                                                  Row(
+                                                    mainAxisSize:
+                                                        MainAxisSize.max,
+                                                    children: [
+                                                      Padding(
+                                                        padding:
+                                                            const EdgeInsetsDirectional
+                                                                .fromSTEB(
+                                                                    0.0,
+                                                                    0.0,
+                                                                    5.0,
+                                                                    0.0),
+                                                        child: FaIcon(
+                                                          FontAwesomeIcons.paw,
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .secondaryText,
+                                                          size: 16.0,
                                                         ),
+                                                      ),
+                                                      Text(
+                                                        '125',
+                                                        style:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyLarge
+                                                                .override(
+                                                                  fontFamily:
+                                                                      'Readex Pro',
+                                                                  letterSpacing:
+                                                                      0.0,
+                                                                ),
+                                                      ),
+                                                    ],
                                                   ),
                                                   Padding(
                                                     padding:
@@ -2194,14 +2376,14 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .accent1,
+                                                                .success,
                                                         borderRadius:
                                                             BorderRadius
                                                                 .circular(8.0),
                                                         border: Border.all(
                                                           color: FlutterFlowTheme
                                                                   .of(context)
-                                                              .primary,
+                                                              .success,
                                                           width: 2.0,
                                                         ),
                                                       ),
@@ -2218,7 +2400,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                                       12.0,
                                                                       0.0),
                                                           child: Text(
-                                                            'Paid',
+                                                            'PAID',
                                                             style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .bodyMedium
@@ -2227,7 +2409,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                                       'Readex Pro',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .primary,
+                                                                      .info,
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -2273,7 +2455,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                 borderRadius:
                                                     BorderRadius.circular(12.0),
                                                 child: Image.network(
-                                                  'https://app.flutterflow.io/icons/ff-icon-192.png',
+                                                  'https://storage.needpix.com/rsynced_images/cat-1001435_1280.png',
                                                   width: 44.0,
                                                   height: 44.0,
                                                   fit: BoxFit.cover,
@@ -2295,7 +2477,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                             .start,
                                                     children: [
                                                       Text(
-                                                        'FlutterFlow',
+                                                        'Company Name',
                                                         style:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -2316,7 +2498,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                                     0.0,
                                                                     0.0),
                                                         child: Text(
-                                                          'Paid on: May, 4th 2023',
+                                                          'Get a product for free',
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .labelSmall
@@ -2337,16 +2519,40 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                 crossAxisAlignment:
                                                     CrossAxisAlignment.end,
                                                 children: [
-                                                  Text(
-                                                    '\$500.00',
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .bodyLarge
-                                                        .override(
-                                                          fontFamily:
-                                                              'Readex Pro',
-                                                          letterSpacing: 0.0,
+                                                  Row(
+                                                    mainAxisSize:
+                                                        MainAxisSize.max,
+                                                    children: [
+                                                      Padding(
+                                                        padding:
+                                                            const EdgeInsetsDirectional
+                                                                .fromSTEB(
+                                                                    0.0,
+                                                                    0.0,
+                                                                    5.0,
+                                                                    0.0),
+                                                        child: FaIcon(
+                                                          FontAwesomeIcons.paw,
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .secondaryText,
+                                                          size: 16.0,
                                                         ),
+                                                      ),
+                                                      Text(
+                                                        '1300',
+                                                        style:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyLarge
+                                                                .override(
+                                                                  fontFamily:
+                                                                      'Readex Pro',
+                                                                  letterSpacing:
+                                                                      0.0,
+                                                                ),
+                                                      ),
+                                                    ],
                                                   ),
                                                   Padding(
                                                     padding:
@@ -2359,14 +2565,14 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .accent1,
+                                                                .success,
                                                         borderRadius:
                                                             BorderRadius
                                                                 .circular(8.0),
                                                         border: Border.all(
                                                           color: FlutterFlowTheme
                                                                   .of(context)
-                                                              .primary,
+                                                              .success,
                                                           width: 2.0,
                                                         ),
                                                       ),
@@ -2383,7 +2589,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                                       12.0,
                                                                       0.0),
                                                           child: Text(
-                                                            'Paid',
+                                                            'PAID',
                                                             style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .bodyMedium
@@ -2392,7 +2598,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                                       'Readex Pro',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .primary,
+                                                                      .info,
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),

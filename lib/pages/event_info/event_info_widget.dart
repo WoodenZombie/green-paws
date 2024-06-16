@@ -4,25 +4,25 @@ import '/flutter_flow/flutter_flow_util.dart';
 import 'package:expandable/expandable.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'event_model.dart';
-export 'event_model.dart';
+import 'event_info_model.dart';
+export 'event_info_model.dart';
 
-class EventWidget extends StatefulWidget {
-  const EventWidget({super.key});
+class EventInfoWidget extends StatefulWidget {
+  const EventInfoWidget({super.key});
 
   @override
-  State<EventWidget> createState() => _EventWidgetState();
+  State<EventInfoWidget> createState() => _EventInfoWidgetState();
 }
 
-class _EventWidgetState extends State<EventWidget> {
-  late EventModel _model;
+class _EventInfoWidgetState extends State<EventInfoWidget> {
+  late EventInfoModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => EventModel());
+    _model = createModel(context, () => EventInfoModel());
 
     _model.expandableExpandableController =
         ExpandableController(initialExpanded: false);
@@ -134,7 +134,7 @@ class _EventWidgetState extends State<EventWidget> {
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(10.0),
                                     child: Image.network(
-                                      'https://live.staticflickr.com/1926/43080023020_63fb14ca0d_b.jpg',
+                                      'https://live.staticflickr.com/7331/9039055929_94e75d2558_b.jpg',
                                       width: double.infinity,
                                       height: 230.0,
                                       fit: BoxFit.cover,
@@ -173,7 +173,7 @@ class _EventWidgetState extends State<EventWidget> {
                                 padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 8.0, 0.0, 0.0),
                                 child: Text(
-                                  'Main  Center Stage',
+                                  'Vistula River Beach',
                                   style: FlutterFlowTheme.of(context)
                                       .headlineSmall
                                       .override(
@@ -273,7 +273,7 @@ class _EventWidgetState extends State<EventWidget> {
                                   hoverColor: Colors.transparent,
                                   highlightColor: Colors.transparent,
                                   onTap: () async {
-                                    context.pushNamed('profile');
+                                    context.pushNamed('userProfile');
                                   },
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(12.0),

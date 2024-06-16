@@ -66,7 +66,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                       hoverColor: Colors.transparent,
                       highlightColor: Colors.transparent,
                       onTap: () async {
-                        context.pushNamed('My_profile');
+                        context.pushNamed('myProfile');
                       },
                       child: Container(
                         width: 62.0,
@@ -209,9 +209,9 @@ class _HomeWidgetState extends State<HomeWidget> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 15.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 15.0, 0.0, 5.0),
                 child: Text(
-                  'Events',
+                  'Change the world, meow!',
                   style: FlutterFlowTheme.of(context).labelMedium.override(
                         fontFamily: 'Readex Pro',
                         color: FlutterFlowTheme.of(context).primaryText,
@@ -313,7 +313,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                         hoverColor: Colors.transparent,
                         highlightColor: Colors.transparent,
                         onTap: () async {
-                          context.pushNamed('Event');
+                          context.pushNamed('eventInfo');
                         },
                         child: Container(
                           width: 200.0,

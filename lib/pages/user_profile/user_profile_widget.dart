@@ -2,25 +2,25 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'profile_model.dart';
-export 'profile_model.dart';
+import 'user_profile_model.dart';
+export 'user_profile_model.dart';
 
-class ProfileWidget extends StatefulWidget {
-  const ProfileWidget({super.key});
+class UserProfileWidget extends StatefulWidget {
+  const UserProfileWidget({super.key});
 
   @override
-  State<ProfileWidget> createState() => _ProfileWidgetState();
+  State<UserProfileWidget> createState() => _UserProfileWidgetState();
 }
 
-class _ProfileWidgetState extends State<ProfileWidget> {
-  late ProfileModel _model;
+class _UserProfileWidgetState extends State<UserProfileWidget> {
+  late UserProfileModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => ProfileModel());
+    _model = createModel(context, () => UserProfileModel());
 
     WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }

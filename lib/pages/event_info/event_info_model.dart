@@ -1,9 +1,9 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'event_widget.dart' show EventWidget;
+import 'event_info_widget.dart' show EventInfoWidget;
 import 'package:expandable/expandable.dart';
 import 'package:flutter/material.dart';
 
-class EventModel extends FlutterFlowModel<EventWidget> {
+class EventInfoModel extends FlutterFlowModel<EventInfoWidget> {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();

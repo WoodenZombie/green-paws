@@ -72,28 +72,28 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? const HomeWidget() : const Auth2Widget(),
+          appStateNotifier.loggedIn ? const HomeWidget() : const AutheficationWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) =>
-              appStateNotifier.loggedIn ? const HomeWidget() : const Auth2Widget(),
+              appStateNotifier.loggedIn ? const HomeWidget() : const AutheficationWidget(),
         ),
         FFRoute(
-          name: 'Auth2',
-          path: '/auth2',
-          builder: (context, params) => const Auth2Widget(),
+          name: 'authefication',
+          path: '/authefication',
+          builder: (context, params) => const AutheficationWidget(),
         ),
         FFRoute(
-          name: 'profile',
-          path: '/profile',
-          builder: (context, params) => const ProfileWidget(),
+          name: 'userProfile',
+          path: '/userProfile',
+          builder: (context, params) => const UserProfileWidget(),
         ),
         FFRoute(
-          name: 'Event',
-          path: '/event',
-          builder: (context, params) => const EventWidget(),
+          name: 'eventInfo',
+          path: '/eventInfo',
+          builder: (context, params) => const EventInfoWidget(),
         ),
         FFRoute(
           name: 'home',
@@ -101,7 +101,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => const HomeWidget(),
         ),
         FFRoute(
-          name: 'My_profile',
+          name: 'myProfile',
           path: '/myProfile',
           builder: (context, params) => const MyProfileWidget(),
         ),
@@ -277,7 +277,7 @@ class FFRoute {
 
           if (requireAuth && !appStateNotifier.loggedIn) {
             appStateNotifier.setRedirectLocationIfUnset(state.uri.toString());
-            return '/auth2';
+            return '/authefication';
           }
           return null;
         },
