@@ -97,13 +97,15 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                           const EdgeInsetsDirectional.fromSTEB(10.0, 14.0, 0.0, 0.0),
                       child: Text(
                         'Your balance:',
-                        style:
-                            FlutterFlowTheme.of(context).labelMedium.override(
-                                  fontFamily: 'Readex Pro',
-                                  fontSize: 24.0,
-                                  letterSpacing: 0.0,
-                                  fontWeight: FontWeight.w600,
-                                ),
+                        style: FlutterFlowTheme.of(context)
+                            .labelMedium
+                            .override(
+                              fontFamily: 'Readex Pro',
+                              color: FlutterFlowTheme.of(context).primaryText,
+                              fontSize: 24.0,
+                              letterSpacing: 0.0,
+                              fontWeight: FontWeight.w600,
+                            ),
                       ),
                     ),
                     Row(
@@ -119,6 +121,8 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                 .labelMedium
                                 .override(
                                   fontFamily: 'Readex Pro',
+                                  color:
+                                      FlutterFlowTheme.of(context).primaryText,
                                   fontSize: 24.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.w600,
@@ -132,7 +136,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                 0.0, 5.0, 0.0, 3.0),
                             child: FaIcon(
                               FontAwesomeIcons.paw,
-                              color: FlutterFlowTheme.of(context).secondaryText,
+                              color: FlutterFlowTheme.of(context).primaryText,
                               size: 24.0,
                             ),
                           ),
@@ -145,12 +149,12 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
               Align(
                 alignment: const AlignmentDirectional(-1.0, 0.0),
                 child: Padding(
-                  padding:
-                      const EdgeInsetsDirectional.fromSTEB(10.0, 16.0, 10.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(10.0, 5.0, 10.0, 0.0),
                   child: Text(
                     'What meowsome stuff can you get for your hard work?',
                     style: FlutterFlowTheme.of(context).labelMedium.override(
                           fontFamily: 'Readex Pro',
+                          color: FlutterFlowTheme.of(context).secondaryText,
                           fontSize: 16.0,
                           letterSpacing: 0.0,
                         ),
@@ -262,8 +266,8 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                   borderRadius:
                                                       BorderRadius.circular(
                                                           12.0),
-                                                  child: Image.network(
-                                                    'https://storage.needpix.com/rsynced_images/cat-1001435_1280.png',
+                                                  child: Image.asset(
+                                                    'assets/images/cat-1001435_1280.png',
                                                     width: 44.0,
                                                     height: 44.0,
                                                     fit: BoxFit.cover,
@@ -459,8 +463,8 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                   borderRadius:
                                                       BorderRadius.circular(
                                                           12.0),
-                                                  child: Image.network(
-                                                    'https://storage.needpix.com/rsynced_images/cat-1001435_1280.png',
+                                                  child: Image.asset(
+                                                    'assets/images/cat-1001435_1280.png',
                                                     width: 44.0,
                                                     height: 44.0,
                                                     fit: BoxFit.cover,
@@ -676,8 +680,8 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                   borderRadius:
                                                       BorderRadius.circular(
                                                           12.0),
-                                                  child: Image.network(
-                                                    'https://storage.needpix.com/rsynced_images/cat-1001435_1280.png',
+                                                  child: Image.asset(
+                                                    'assets/images/cat-1001435_1280.png',
                                                     width: 44.0,
                                                     height: 44.0,
                                                     fit: BoxFit.cover,
@@ -827,7 +831,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                                         'Readex Pro',
                                                                     color: FlutterFlowTheme.of(
                                                                             context)
-                                                                        .error,
+                                                                        .primaryText,
                                                                     letterSpacing:
                                                                         0.0,
                                                                   ),
@@ -873,8 +877,8 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                   borderRadius:
                                                       BorderRadius.circular(
                                                           12.0),
-                                                  child: Image.network(
-                                                    'https://storage.needpix.com/rsynced_images/cat-1001435_1280.png',
+                                                  child: Image.asset(
+                                                    'assets/images/cat-1001435_1280.png',
                                                     width: 44.0,
                                                     height: 44.0,
                                                     fit: BoxFit.cover,
@@ -1024,7 +1028,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                                         'Readex Pro',
                                                                     color: FlutterFlowTheme.of(
                                                                             context)
-                                                                        .error,
+                                                                        .primaryText,
                                                                     letterSpacing:
                                                                         0.0,
                                                                   ),
@@ -1070,8 +1074,8 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                   borderRadius:
                                                       BorderRadius.circular(
                                                           12.0),
-                                                  child: Image.network(
-                                                    'https://storage.needpix.com/rsynced_images/cat-1001435_1280.png',
+                                                  child: Image.asset(
+                                                    'assets/images/cat-1001435_1280.png',
                                                     width: 44.0,
                                                     height: 44.0,
                                                     fit: BoxFit.cover,
@@ -1185,8 +1189,9 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                         height: 32.0,
                                                         decoration:
                                                             BoxDecoration(
-                                                          color:
-                                                              const Color(0xFF756CF6),
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .success,
                                                           borderRadius:
                                                               BorderRadius
                                                                   .circular(
@@ -1476,8 +1481,8 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                               ClipRRect(
                                                 borderRadius:
                                                     BorderRadius.circular(12.0),
-                                                child: Image.network(
-                                                  'https://storage.needpix.com/rsynced_images/cat-1001435_1280.png',
+                                                child: Image.asset(
+                                                  'assets/images/cat-1001435_1280.png',
                                                   width: 44.0,
                                                   height: 44.0,
                                                   fit: BoxFit.cover,
@@ -1670,8 +1675,8 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                               ClipRRect(
                                                 borderRadius:
                                                     BorderRadius.circular(12.0),
-                                                child: Image.network(
-                                                  'https://storage.needpix.com/rsynced_images/cat-1001435_1280.png',
+                                                child: Image.asset(
+                                                  'assets/images/cat-1001435_1280.png',
                                                   width: 44.0,
                                                   height: 44.0,
                                                   fit: BoxFit.cover,
@@ -1864,8 +1869,8 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                               ClipRRect(
                                                 borderRadius:
                                                     BorderRadius.circular(12.0),
-                                                child: Image.network(
-                                                  'https://storage.needpix.com/rsynced_images/cat-1001435_1280.png',
+                                                child: Image.asset(
+                                                  'assets/images/cat-1001435_1280.png',
                                                   width: 44.0,
                                                   height: 44.0,
                                                   fit: BoxFit.cover,
@@ -2013,7 +2018,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                                       'Readex Pro',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .error,
+                                                                      .primaryText,
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -2058,8 +2063,8 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                               ClipRRect(
                                                 borderRadius:
                                                     BorderRadius.circular(12.0),
-                                                child: Image.network(
-                                                  'https://storage.needpix.com/rsynced_images/cat-1001435_1280.png',
+                                                child: Image.asset(
+                                                  'assets/images/cat-1001435_1280.png',
                                                   width: 44.0,
                                                   height: 44.0,
                                                   fit: BoxFit.cover,
@@ -2207,7 +2212,7 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                                                       'Readex Pro',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .error,
+                                                                      .primaryText,
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -2265,8 +2270,8 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                               ClipRRect(
                                                 borderRadius:
                                                     BorderRadius.circular(12.0),
-                                                child: Image.network(
-                                                  'https://storage.needpix.com/rsynced_images/cat-1001435_1280.png',
+                                                child: Image.asset(
+                                                  'assets/images/cat-1001435_1280.png',
                                                   width: 44.0,
                                                   height: 44.0,
                                                   fit: BoxFit.cover,
@@ -2454,8 +2459,8 @@ class _PawBalanceWidgetState extends State<PawBalanceWidget>
                                               ClipRRect(
                                                 borderRadius:
                                                     BorderRadius.circular(12.0),
-                                                child: Image.network(
-                                                  'https://storage.needpix.com/rsynced_images/cat-1001435_1280.png',
+                                                child: Image.asset(
+                                                  'assets/images/cat-1001435_1280.png',
                                                   width: 44.0,
                                                   height: 44.0,
                                                   fit: BoxFit.cover,

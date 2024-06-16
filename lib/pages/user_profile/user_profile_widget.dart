@@ -40,7 +40,7 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
           : FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: const Color(0xFFF1F4F8),
+        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         appBar: AppBar(
           backgroundColor: FlutterFlowTheme.of(context).secondary,
           automaticallyImplyLeading: false,
@@ -49,9 +49,9 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
             borderRadius: 30.0,
             borderWidth: 1.0,
             buttonSize: 60.0,
-            icon: const Icon(
+            icon: Icon(
               Icons.arrow_back_rounded,
-              color: Colors.white,
+              color: FlutterFlowTheme.of(context).secondaryBackground,
               size: 30.0,
             ),
             onPressed: () async {
@@ -77,72 +77,72 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
           child: Column(
             mainAxisSize: MainAxisSize.max,
             children: [
-              Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
-                child: Row(
-                  mainAxisSize: MainAxisSize.max,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Padding(
-                      padding:
-                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
-                      child: Container(
-                        width: 80.0,
-                        height: 80.0,
-                        decoration: BoxDecoration(
-                          color: FlutterFlowTheme.of(context).secondary,
-                          shape: BoxShape.circle,
-                        ),
-                        child: Align(
-                          alignment: const AlignmentDirectional(0.0, 0.0),
+              Container(
+                decoration: BoxDecoration(
+                  color: FlutterFlowTheme.of(context).primaryBackground,
+                ),
+                child: Padding(
+                  padding:
+                      const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Padding(
+                        padding:
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                        child: Container(
+                          width: 100.0,
+                          height: 100.0,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            border: Border.all(
+                              color: FlutterFlowTheme.of(context).secondary,
+                              width: 3.0,
+                            ),
+                          ),
                           child: Padding(
                             padding: const EdgeInsets.all(4.0),
-                            child: Container(
-                              width: 100.0,
-                              height: 100.0,
-                              decoration: const BoxDecoration(
-                                shape: BoxShape.circle,
-                              ),
-                              child: Padding(
-                                padding: const EdgeInsets.all(4.0),
-                                child: ClipRRect(
-                                  borderRadius: BorderRadius.circular(50.0),
-                                  child: Image.network(
-                                    'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60',
-                                    width: 100.0,
-                                    height: 100.0,
-                                    fit: BoxFit.cover,
-                                  ),
-                                ),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(50.0),
+                              child: Image.network(
+                                'https://www.stockvault.net/data/2015/02/20/168371/preview16.jpg',
+                                width: 100.0,
+                                height: 100.0,
+                                fit: BoxFit.cover,
                               ),
                             ),
                           ),
                         ),
                       ),
-                    ),
-                    Expanded(
-                      child: Column(
-                        mainAxisSize: MainAxisSize.max,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            'Mike Wasowski',
-                            textAlign: TextAlign.center,
-                            style: FlutterFlowTheme.of(context)
-                                .headlineSmall
-                                .override(
-                                  fontFamily: 'Plus Jakarta Sans',
-                                  color: const Color(0xFF101213),
-                                  fontSize: 22.0,
-                                  letterSpacing: 0.0,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                          ),
-                        ],
+                      Expanded(
+                        child: Column(
+                          mainAxisSize: MainAxisSize.max,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Align(
+                              alignment: const AlignmentDirectional(-1.0, 0.0),
+                              child: Text(
+                                'Mike Wasowski',
+                                textAlign: TextAlign.center,
+                                style: FlutterFlowTheme.of(context)
+                                    .headlineSmall
+                                    .override(
+                                      fontFamily: 'Plus Jakarta Sans',
+                                      color: FlutterFlowTheme.of(context)
+                                          .primaryText,
+                                      fontSize: 22.0,
+                                      letterSpacing: 0.0,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
               Expanded(
@@ -151,9 +151,9 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                   child: Container(
                     width: double.infinity,
                     height: 400.0,
-                    decoration: const BoxDecoration(
-                      color: Colors.white,
-                      boxShadow: [
+                    decoration: BoxDecoration(
+                      color: FlutterFlowTheme.of(context).secondaryBackground,
+                      boxShadow: const [
                         BoxShadow(
                           blurRadius: 3.0,
                           color: Color(0x33000000),
@@ -163,7 +163,7 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                           ),
                         )
                       ],
-                      borderRadius: BorderRadius.only(
+                      borderRadius: const BorderRadius.only(
                         bottomLeft: Radius.circular(0.0),
                         bottomRight: Radius.circular(0.0),
                         topLeft: Radius.circular(16.0),
@@ -190,10 +190,11 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                         .headlineMedium
                                         .override(
                                           fontFamily: 'Plus Jakarta Sans',
-                                          color: const Color(0xFF101213),
+                                          color: FlutterFlowTheme.of(context)
+                                              .primaryText,
                                           fontSize: 24.0,
                                           letterSpacing: 0.0,
-                                          fontWeight: FontWeight.w500,
+                                          fontWeight: FontWeight.w600,
                                         ),
                                   ),
                                 ),
@@ -204,7 +205,8 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                       .bodySmall
                                       .override(
                                         fontFamily: 'Plus Jakarta Sans',
-                                        color: const Color(0xFF101213),
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryText,
                                         fontSize: 15.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w500,
@@ -220,12 +222,18 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                         .labelLarge
                                         .override(
                                           fontFamily: 'Plus Jakarta Sans',
-                                          color: const Color(0xFF57636C),
+                                          color: FlutterFlowTheme.of(context)
+                                              .primaryText,
                                           fontSize: 16.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.w500,
                                         ),
                                   ),
+                                ),
+                                Divider(
+                                  height: 32.0,
+                                  thickness: 3.0,
+                                  color: FlutterFlowTheme.of(context).primary,
                                 ),
                                 Padding(
                                   padding: const EdgeInsetsDirectional.fromSTEB(
@@ -257,7 +265,9 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                                         fontFamily:
                                                             'Plus Jakarta Sans',
                                                         color:
-                                                            const Color(0xFF101213),
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primaryText,
                                                         fontSize: 36.0,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
@@ -310,7 +320,9 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                                         fontFamily:
                                                             'Plus Jakarta Sans',
                                                         color:
-                                                            const Color(0xFF101213),
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primaryText,
                                                         fontSize: 36.0,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
@@ -356,7 +368,8 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                         .headlineMedium
                                         .override(
                                           fontFamily: 'Plus Jakarta Sans',
-                                          color: const Color(0xFF101213),
+                                          color: FlutterFlowTheme.of(context)
+                                              .primaryText,
                                           fontSize: 24.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.w500,
@@ -371,21 +384,13 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                     child: Container(
                                       width: double.infinity,
                                       decoration: BoxDecoration(
-                                        color: Colors.white,
-                                        boxShadow: const [
-                                          BoxShadow(
-                                            blurRadius: 0.0,
-                                            color: Color(0xFFF5FBFB),
-                                            offset: Offset(
-                                              0.0,
-                                              1.0,
-                                            ),
-                                          )
-                                        ],
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryBackground,
                                         borderRadius:
                                             BorderRadius.circular(0.0),
                                         border: Border.all(
-                                          color: const Color(0xFFF5FBFB),
+                                          color: FlutterFlowTheme.of(context)
+                                              .secondaryBackground,
                                           width: 1.0,
                                         ),
                                       ),
@@ -399,16 +404,18 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                           crossAxisAlignment:
                                               CrossAxisAlignment.center,
                                           children: [
-                                            const Align(
-                                              alignment: AlignmentDirectional(
+                                            Align(
+                                              alignment: const AlignmentDirectional(
                                                   0.0, -1.0),
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         12.0, 0.0, 0.0, 0.0),
                                                 child: Icon(
                                                   Icons.co2,
-                                                  color: Color(0xFF57636C),
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .primaryText,
                                                   size: 32.0,
                                                 ),
                                               ),
@@ -426,7 +433,9 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                                       .override(
                                                         fontFamily: 'Inter',
                                                         color:
-                                                            const Color(0xFF101518),
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primaryText,
                                                         fontSize: 16.0,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
@@ -449,21 +458,13 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                     child: Container(
                                       width: double.infinity,
                                       decoration: BoxDecoration(
-                                        color: Colors.white,
-                                        boxShadow: const [
-                                          BoxShadow(
-                                            blurRadius: 0.0,
-                                            color: Color(0xFFF5FBFB),
-                                            offset: Offset(
-                                              0.0,
-                                              1.0,
-                                            ),
-                                          )
-                                        ],
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryBackground,
                                         borderRadius:
                                             BorderRadius.circular(0.0),
                                         border: Border.all(
-                                          color: const Color(0xFFF5FBFB),
+                                          color: FlutterFlowTheme.of(context)
+                                              .secondaryBackground,
                                           width: 1.0,
                                         ),
                                       ),
@@ -477,16 +478,18 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                           crossAxisAlignment:
                                               CrossAxisAlignment.center,
                                           children: [
-                                            const Align(
-                                              alignment: AlignmentDirectional(
+                                            Align(
+                                              alignment: const AlignmentDirectional(
                                                   0.0, -1.0),
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         12.0, 0.0, 0.0, 0.0),
                                                 child: Icon(
                                                   Icons.recycling,
-                                                  color: Color(0xFF57636C),
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .primaryText,
                                                   size: 32.0,
                                                 ),
                                               ),
@@ -504,7 +507,9 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                                       .override(
                                                         fontFamily: 'Inter',
                                                         color:
-                                                            const Color(0xFF101518),
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primaryText,
                                                         fontSize: 16.0,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
@@ -527,21 +532,13 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                     child: Container(
                                       width: double.infinity,
                                       decoration: BoxDecoration(
-                                        color: Colors.white,
-                                        boxShadow: const [
-                                          BoxShadow(
-                                            blurRadius: 0.0,
-                                            color: Color(0xFFF5FBFB),
-                                            offset: Offset(
-                                              0.0,
-                                              1.0,
-                                            ),
-                                          )
-                                        ],
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryBackground,
                                         borderRadius:
                                             BorderRadius.circular(0.0),
                                         border: Border.all(
-                                          color: const Color(0xFFF5FBFB),
+                                          color: FlutterFlowTheme.of(context)
+                                              .secondaryBackground,
                                           width: 1.0,
                                         ),
                                       ),
@@ -555,16 +552,18 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                           crossAxisAlignment:
                                               CrossAxisAlignment.center,
                                           children: [
-                                            const Align(
-                                              alignment: AlignmentDirectional(
+                                            Align(
+                                              alignment: const AlignmentDirectional(
                                                   0.0, -1.0),
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         12.0, 0.0, 0.0, 0.0),
                                                 child: Icon(
                                                   Icons.forest,
-                                                  color: Color(0xFF57636C),
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .primaryText,
                                                   size: 32.0,
                                                 ),
                                               ),
@@ -582,7 +581,9 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                                       .override(
                                                         fontFamily: 'Inter',
                                                         color:
-                                                            const Color(0xFF101518),
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primaryText,
                                                         fontSize: 16.0,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
@@ -609,7 +610,8 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                       .bodySmall
                                       .override(
                                         fontFamily: 'Plus Jakarta Sans',
-                                        color: const Color(0xFF101213),
+                                        color: FlutterFlowTheme.of(context)
+                                            .primaryText,
                                         fontSize: 24.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w500,
@@ -626,12 +628,15 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                       child: Container(
                                         width: double.infinity,
                                         decoration: BoxDecoration(
-                                          color: const Color(0xFFE0ECF4),
-                                          boxShadow: const [
+                                          color: FlutterFlowTheme.of(context)
+                                              .alternate,
+                                          boxShadow: [
                                             BoxShadow(
                                               blurRadius: 0.0,
-                                              color: Color(0xFFF1F4F8),
-                                              offset: Offset(
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .accent4,
+                                              offset: const Offset(
                                                 0.0,
                                                 1.0,
                                               ),
@@ -702,8 +707,9 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                                                 .override(
                                                                   fontFamily:
                                                                       'Plus Jakarta Sans',
-                                                                  color: const Color(
-                                                                      0xFF101213),
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .primaryText,
                                                                   fontSize:
                                                                       16.0,
                                                                   letterSpacing:
@@ -744,8 +750,9 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                                                   .override(
                                                                     fontFamily:
                                                                         'Plus Jakarta Sans',
-                                                                    color: const Color(
-                                                                        0xFF57636C),
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .secondaryText,
                                                                     fontSize:
                                                                         12.0,
                                                                     letterSpacing:
@@ -781,7 +788,7 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                                                   4.0,
                                                                   12.0),
                                                       child: Text(
-                                                        'I really had fun with you, guys, thank you so much for this opportunity and thanks  ',
+                                                        'I really had fun with you, guys, thank you so much Microsoft Poland for this opportunity and thanks Green Paws for hosting this event! Looking forward for the next one <3 ',
                                                         style:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -841,8 +848,8 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                                                   MainAxisSize
                                                                       .max,
                                                               children: [
-                                                                const Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                Padding(
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           8.0,
                                                                           8.0,
@@ -851,8 +858,9 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                                                   child: Icon(
                                                                     Icons
                                                                         .mode_comment_outlined,
-                                                                    color: Color(
-                                                                        0xFF57636C),
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .secondaryText,
                                                                     size: 24.0,
                                                                   ),
                                                                 ),
@@ -864,7 +872,7 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                                                           8.0,
                                                                           0.0),
                                                                   child: Text(
-                                                                    '4',
+                                                                    '99',
                                                                     style: FlutterFlowTheme.of(
                                                                             context)
                                                                         .labelMedium
@@ -872,7 +880,7 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                                                           fontFamily:
                                                                               'Plus Jakarta Sans',
                                                                           color:
-                                                                              const Color(0xFF57636C),
+                                                                              FlutterFlowTheme.of(context).secondaryText,
                                                                           fontSize:
                                                                               14.0,
                                                                           letterSpacing:
@@ -898,8 +906,8 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                                                   MainAxisSize
                                                                       .max,
                                                               children: [
-                                                                const Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                Padding(
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           8.0,
                                                                           8.0,
@@ -908,8 +916,9 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                                                   child: Icon(
                                                                     Icons
                                                                         .favorite_border_rounded,
-                                                                    color: Color(
-                                                                        0xFF57636C),
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .secondaryText,
                                                                     size: 24.0,
                                                                   ),
                                                                 ),
@@ -921,7 +930,7 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                                                           8.0,
                                                                           0.0),
                                                                   child: Text(
-                                                                    '4',
+                                                                    '999',
                                                                     style: FlutterFlowTheme.of(
                                                                             context)
                                                                         .labelMedium
@@ -929,7 +938,7 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                                                           fontFamily:
                                                                               'Plus Jakarta Sans',
                                                                           color:
-                                                                              const Color(0xFF57636C),
+                                                                              FlutterFlowTheme.of(context).secondaryText,
                                                                           fontSize:
                                                                               14.0,
                                                                           letterSpacing:
@@ -942,9 +951,9 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                                               ],
                                                             ),
                                                           ),
-                                                          const Padding(
+                                                          Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         0.0,
@@ -957,23 +966,24 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                                               children: [
                                                                 Padding(
                                                                   padding:
-                                                                      EdgeInsets
+                                                                      const EdgeInsets
                                                                           .all(
                                                                               8.0),
                                                                   child: Icon(
                                                                     Icons
                                                                         .bookmark_border,
-                                                                    color: Color(
-                                                                        0xFF57636C),
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .secondaryText,
                                                                     size: 24.0,
                                                                   ),
                                                                 ),
                                                               ],
                                                             ),
                                                           ),
-                                                          const Padding(
+                                                          Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         0.0,
@@ -986,14 +996,15 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                                               children: [
                                                                 Padding(
                                                                   padding:
-                                                                      EdgeInsets
+                                                                      const EdgeInsets
                                                                           .all(
                                                                               8.0),
                                                                   child: Icon(
                                                                     Icons
                                                                         .ios_share,
-                                                                    color: Color(
-                                                                        0xFF57636C),
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .secondaryText,
                                                                     size: 24.0,
                                                                   ),
                                                                 ),

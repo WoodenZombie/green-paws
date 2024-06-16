@@ -145,14 +145,14 @@ class _AutheficationWidgetState extends State<AutheficationWidget>
                   width: double.infinity,
                   height: 230.0,
                   decoration: BoxDecoration(
-                    color: const Color(0xFFF1F4F8),
+                    color: FlutterFlowTheme.of(context).info,
                     borderRadius: BorderRadius.circular(16.0),
                   ),
                   alignment: const AlignmentDirectional(0.0, -1.0),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(8.0),
                     child: Image.asset(
-                      'assets/images/icon-removebg-notext.png',
+                      'assets/images/green_paws.png',
                       width: 300.0,
                       height: 169.0,
                       fit: BoxFit.contain,
@@ -180,7 +180,8 @@ class _AutheficationWidgetState extends State<AutheficationWidget>
                               maxWidth: 570.0,
                             ),
                             decoration: BoxDecoration(
-                              color: Colors.white,
+                              color: FlutterFlowTheme.of(context)
+                                  .primaryBackground,
                               boxShadow: const [
                                 BoxShadow(
                                   blurRadius: 4.0,
@@ -193,7 +194,8 @@ class _AutheficationWidgetState extends State<AutheficationWidget>
                               ],
                               borderRadius: BorderRadius.circular(12.0),
                               border: Border.all(
-                                color: const Color(0xFFF1F4F8),
+                                color: FlutterFlowTheme.of(context)
+                                    .primaryBackground,
                                 width: 2.0,
                               ),
                             ),
@@ -206,30 +208,21 @@ class _AutheficationWidgetState extends State<AutheficationWidget>
                                     alignment: const Alignment(0.0, 0),
                                     child: TabBar(
                                       isScrollable: true,
-                                      labelColor: const Color(0xFF101213),
-                                      unselectedLabelColor: const Color(0xFF57636C),
+                                      labelColor: FlutterFlowTheme.of(context)
+                                          .primaryText,
+                                      unselectedLabelColor:
+                                          FlutterFlowTheme.of(context)
+                                              .secondaryText,
                                       labelPadding:
                                           const EdgeInsetsDirectional.fromSTEB(
                                               32.0, 0.0, 32.0, 0.0),
                                       labelStyle: FlutterFlowTheme.of(context)
                                           .titleMedium
                                           .override(
-                                            fontFamily: 'Plus Jakarta Sans',
-                                            color: Colors.white,
-                                            fontSize: 18.0,
+                                            fontFamily: 'Readex Pro',
                                             letterSpacing: 0.0,
-                                            fontWeight: FontWeight.w500,
                                           ),
-                                      unselectedLabelStyle:
-                                          FlutterFlowTheme.of(context)
-                                              .titleMedium
-                                              .override(
-                                                fontFamily: 'Plus Jakarta Sans',
-                                                color: Colors.white,
-                                                fontSize: 18.0,
-                                                letterSpacing: 0.0,
-                                                fontWeight: FontWeight.w500,
-                                              ),
+                                      unselectedLabelStyle: const TextStyle(),
                                       indicatorColor:
                                           FlutterFlowTheme.of(context).primary,
                                       indicatorWeight: 3.0,
@@ -285,12 +278,13 @@ class _AutheficationWidgetState extends State<AutheficationWidget>
                                                         .override(
                                                           fontFamily:
                                                               'Plus Jakarta Sans',
-                                                          color:
-                                                              const Color(0xFF101213),
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .primaryText,
                                                           fontSize: 24.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
-                                                              FontWeight.w500,
+                                                              FontWeight.w600,
                                                         ),
                                                   ),
                                                   Padding(
@@ -308,12 +302,13 @@ class _AutheficationWidgetState extends State<AutheficationWidget>
                                                           .override(
                                                             fontFamily:
                                                                 'Plus Jakarta Sans',
-                                                            color: const Color(
-                                                                0xFF57636C),
+                                                            color: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .secondaryText,
                                                             fontSize: 14.0,
                                                             letterSpacing: 0.0,
                                                             fontWeight:
-                                                                FontWeight.w500,
+                                                                FontWeight.w600,
                                                           ),
                                                     ),
                                                   ),
@@ -344,8 +339,9 @@ class _AutheficationWidgetState extends State<AutheficationWidget>
                                                                   .override(
                                                                     fontFamily:
                                                                         'Plus Jakarta Sans',
-                                                                    color: const Color(
-                                                                        0xFF57636C),
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .secondaryText,
                                                                     fontSize:
                                                                         16.0,
                                                                     letterSpacing:
@@ -466,8 +462,9 @@ class _AutheficationWidgetState extends State<AutheficationWidget>
                                                                   .override(
                                                                     fontFamily:
                                                                         'Plus Jakarta Sans',
-                                                                    color: const Color(
-                                                                        0xFF57636C),
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .secondaryText,
                                                                     fontSize:
                                                                         16.0,
                                                                     letterSpacing:
@@ -695,8 +692,9 @@ class _AutheficationWidgetState extends State<AutheficationWidget>
                                                                 .override(
                                                                   fontFamily:
                                                                       'Plus Jakarta Sans',
-                                                                  color: const Color(
-                                                                      0xFF57636C),
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .primaryText,
                                                                   fontSize:
                                                                       14.0,
                                                                   letterSpacing:
@@ -954,12 +952,13 @@ class _AutheficationWidgetState extends State<AutheficationWidget>
                                                         .override(
                                                           fontFamily:
                                                               'Plus Jakarta Sans',
-                                                          color:
-                                                              const Color(0xFF101213),
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .primaryText,
                                                           fontSize: 24.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
-                                                              FontWeight.w500,
+                                                              FontWeight.w600,
                                                         ),
                                                   ),
                                                   Padding(
@@ -977,12 +976,13 @@ class _AutheficationWidgetState extends State<AutheficationWidget>
                                                           .override(
                                                             fontFamily:
                                                                 'Plus Jakarta Sans',
-                                                            color: const Color(
-                                                                0xFF57636C),
+                                                            color: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .secondaryText,
                                                             fontSize: 14.0,
                                                             letterSpacing: 0.0,
                                                             fontWeight:
-                                                                FontWeight.w500,
+                                                                FontWeight.w600,
                                                           ),
                                                     ),
                                                   ),
@@ -1362,21 +1362,24 @@ class _AutheficationWidgetState extends State<AutheficationWidget>
                                                         'Or sign in with',
                                                         textAlign:
                                                             TextAlign.center,
-                                                        style: FlutterFlowTheme
-                                                                .of(context)
-                                                            .labelMedium
-                                                            .override(
-                                                              fontFamily:
-                                                                  'Plus Jakarta Sans',
-                                                              color: const Color(
-                                                                  0xFF57636C),
-                                                              fontSize: 14.0,
-                                                              letterSpacing:
-                                                                  0.0,
-                                                              fontWeight:
-                                                                  FontWeight
-                                                                      .w500,
-                                                            ),
+                                                        style:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .labelMedium
+                                                                .override(
+                                                                  fontFamily:
+                                                                      'Plus Jakarta Sans',
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .primaryText,
+                                                                  fontSize:
+                                                                      14.0,
+                                                                  letterSpacing:
+                                                                      0.0,
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .w500,
+                                                                ),
                                                       ),
                                                     ),
                                                   ),

@@ -53,9 +53,9 @@ class _EventInfoWidgetState extends State<EventInfoWidget> {
             borderRadius: 30.0,
             borderWidth: 1.0,
             buttonSize: 60.0,
-            icon: const Icon(
+            icon: Icon(
               Icons.arrow_back_rounded,
-              color: Colors.white,
+              color: FlutterFlowTheme.of(context).secondaryBackground,
               size: 30.0,
             ),
             onPressed: () async {
@@ -173,7 +173,7 @@ class _EventInfoWidgetState extends State<EventInfoWidget> {
                                 padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 8.0, 0.0, 0.0),
                                 child: Text(
-                                  'Vistula River Beach',
+                                  'Description',
                                   style: FlutterFlowTheme.of(context)
                                       .headlineSmall
                                       .override(
@@ -193,7 +193,7 @@ class _EventInfoWidgetState extends State<EventInfoWidget> {
                                   padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 8.0, 0.0, 0.0),
                                   child: Text(
-                                    'By protecting and preserving our oceans, we can effectively reduce global warming as healthy...',
+                                    'Join us for cleaning riverside trash on 29.09! Help clean and protect our riverside by removing litter and debris. Enjoy a day...',
                                     style: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
@@ -212,7 +212,7 @@ class _EventInfoWidgetState extends State<EventInfoWidget> {
                                     padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 8.0, 0.0, 12.0),
                                     child: Text(
-                                      'By protecting and preserving our oceans, we can effectively reduce global warming as healthy oceans absorb a significant amount of atmospheric carbon dioxide. Implementing measures to prevent overfishing, reducing plastic pollution, and conserving marine habitats will contribute to a balanced ocean ecosystem, ultimately mitigating global warming.',
+                                      'Join us for cleaning riverside trash on 29.09! Help clean and protect our riverside by removing litter and debris. Enjoy a day of community service, learning, and fun. All supplies provided, plus refreshments. Sign up below or contact Mike Wasowski for details. Together, we can make a difference!',
                                       style: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .override(
@@ -243,15 +243,14 @@ class _EventInfoWidgetState extends State<EventInfoWidget> {
                         color: FlutterFlowTheme.of(context).primary,
                       ),
                       Padding(
-                        padding: const EdgeInsetsDirectional.fromSTEB(
-                            16.0, 12.0, 0.0, 0.0),
+                        padding:
+                            const EdgeInsetsDirectional.fromSTEB(10.0, 8.0, 0.0, 0.0),
                         child: Text(
-                          'Organisators',
+                          'Organizators',
                           style: FlutterFlowTheme.of(context)
-                              .labelLarge
+                              .headlineSmall
                               .override(
-                                fontFamily: 'Readex Pro',
-                                color: FlutterFlowTheme.of(context).primaryText,
+                                fontFamily: 'Outfit',
                                 letterSpacing: 0.0,
                               ),
                         ),
@@ -278,7 +277,7 @@ class _EventInfoWidgetState extends State<EventInfoWidget> {
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(12.0),
                                     child: Image.network(
-                                      'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60',
+                                      'https://www.stockvault.net/data/2015/02/20/168371/preview16.jpg',
                                       width: 80.0,
                                       height: 80.0,
                                       fit: BoxFit.cover,
@@ -295,7 +294,7 @@ class _EventInfoWidgetState extends State<EventInfoWidget> {
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(12.0),
                                   child: Image.network(
-                                    'https://images.unsplash.com/photo-1614436163996-25cee5f54290?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60',
+                                    'https://upload.wikimedia.org/wikipedia/commons/8/85/Horacio-Pagani_%28cropped%29.jpg',
                                     width: 80.0,
                                     height: 80.0,
                                     fit: BoxFit.cover,
@@ -311,7 +310,7 @@ class _EventInfoWidgetState extends State<EventInfoWidget> {
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(12.0),
                                   child: Image.network(
-                                    'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60',
+                                    'https://i2.pickpik.com/photos/971/10/527/business-woman-business-man-business-businessman-preview.jpg',
                                     width: 80.0,
                                     height: 80.0,
                                     fit: BoxFit.cover,
@@ -330,15 +329,14 @@ class _EventInfoWidgetState extends State<EventInfoWidget> {
                         color: FlutterFlowTheme.of(context).primary,
                       ),
                       Padding(
-                        padding: const EdgeInsetsDirectional.fromSTEB(
-                            16.0, 12.0, 0.0, 0.0),
+                        padding:
+                            const EdgeInsetsDirectional.fromSTEB(10.0, 8.0, 0.0, 0.0),
                         child: Text(
-                          'Address',
+                          'Adress',
                           style: FlutterFlowTheme.of(context)
-                              .labelLarge
+                              .headlineSmall
                               .override(
-                                fontFamily: 'Readex Pro',
-                                color: FlutterFlowTheme.of(context).primaryText,
+                                fontFamily: 'Outfit',
                                 letterSpacing: 0.0,
                               ),
                         ),
@@ -352,7 +350,10 @@ class _EventInfoWidgetState extends State<EventInfoWidget> {
                               .headlineSmall
                               .override(
                                 fontFamily: 'Outfit',
+                                color: FlutterFlowTheme.of(context).secondary,
+                                fontSize: 20.0,
                                 letterSpacing: 0.0,
+                                fontWeight: FontWeight.normal,
                               ),
                         ),
                       ),
@@ -378,15 +379,14 @@ class _EventInfoWidgetState extends State<EventInfoWidget> {
                         color: FlutterFlowTheme.of(context).primary,
                       ),
                       Padding(
-                        padding: const EdgeInsetsDirectional.fromSTEB(
-                            16.0, 12.0, 0.0, 0.0),
+                        padding:
+                            const EdgeInsetsDirectional.fromSTEB(10.0, 8.0, 0.0, 0.0),
                         child: Text(
-                          'Award',
+                          'Reward',
                           style: FlutterFlowTheme.of(context)
-                              .labelLarge
+                              .headlineSmall
                               .override(
-                                fontFamily: 'Readex Pro',
-                                color: FlutterFlowTheme.of(context).primaryText,
+                                fontFamily: 'Outfit',
                                 letterSpacing: 0.0,
                               ),
                         ),
@@ -404,7 +404,7 @@ class _EventInfoWidgetState extends State<EventInfoWidget> {
                                 Flexible(
                                   child: Padding(
                                     padding: const EdgeInsetsDirectional.fromSTEB(
-                                        16.0, 8.0, 0.0, 0.0),
+                                        16.0, 8.0, 0.0, 5.0),
                                     child: Text(
                                       '350 paws',
                                       style: FlutterFlowTheme.of(context)
@@ -426,7 +426,7 @@ class _EventInfoWidgetState extends State<EventInfoWidget> {
                                     child: FaIcon(
                                       FontAwesomeIcons.paw,
                                       color: FlutterFlowTheme.of(context)
-                                          .secondaryText,
+                                          .primaryText,
                                       size: 24.0,
                                     ),
                                   ),

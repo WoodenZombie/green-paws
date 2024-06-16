@@ -146,19 +146,23 @@ class _HomeWidgetState extends State<HomeWidget> {
                                   child: FaIcon(
                                     FontAwesomeIcons.paw,
                                     color: FlutterFlowTheme.of(context)
-                                        .secondaryText,
+                                        .primaryText,
                                     size: 24.0,
                                   ),
                                 ),
                               ),
-                              Text(
-                                '526',
-                                style: FlutterFlowTheme.of(context)
-                                    .bodyMedium
-                                    .override(
-                                      fontFamily: 'Readex Pro',
-                                      letterSpacing: 0.0,
-                                    ),
+                              Padding(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 2.0, 0.0, 0.0),
+                                child: Text(
+                                  '526',
+                                  style: FlutterFlowTheme.of(context)
+                                      .bodyMedium
+                                      .override(
+                                        fontFamily: 'Readex Pro',
+                                        letterSpacing: 0.0,
+                                      ),
+                                ),
                               ),
                             ],
                           ),
@@ -221,6 +225,17 @@ class _HomeWidgetState extends State<HomeWidget> {
                       ),
                 ),
               ),
+              Padding(
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 10.0, 0.0),
+                child: Text(
+                  'Look for an upcoming events where you can contribute to',
+                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                        fontFamily: 'Readex Pro',
+                        color: FlutterFlowTheme.of(context).secondaryText,
+                        letterSpacing: 0.0,
+                      ),
+                ),
+              ),
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
@@ -240,18 +255,17 @@ class _HomeWidgetState extends State<HomeWidget> {
                             () => _model.choiceChipsValue = val?.firstOrNull),
                         selectedChipStyle: ChipStyle(
                           backgroundColor: FlutterFlowTheme.of(context).primary,
-                          textStyle:
-                              FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Readex Pro',
-                                    color: FlutterFlowTheme.of(context)
-                                        .secondaryBackground,
-                                    letterSpacing: 0.0,
-                                  ),
-                          iconColor:
-                              FlutterFlowTheme.of(context).secondaryBackground,
+                          textStyle: FlutterFlowTheme.of(context)
+                              .bodyMedium
+                              .override(
+                                fontFamily: 'Readex Pro',
+                                color: FlutterFlowTheme.of(context).primaryText,
+                                letterSpacing: 0.0,
+                              ),
+                          iconColor: FlutterFlowTheme.of(context).primaryText,
                           iconSize: 18.0,
                           elevation: 0.0,
-                          borderColor: const Color(0xFF79B557),
+                          borderColor: FlutterFlowTheme.of(context).secondary,
                           borderWidth: 2.0,
                           borderRadius: BorderRadius.circular(8.0),
                         ),
@@ -372,7 +386,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                             ),
                                       ),
                                       Text(
-                                        'Clean Beach Trash',
+                                        'Clean Riverside Trash',
                                         style: FlutterFlowTheme.of(context)
                                             .bodyLarge
                                             .override(
@@ -448,7 +462,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                           ),
                                     ),
                                     Text(
-                                      'Collect plastic trash',
+                                      'Collect plastic in forest',
                                       style: FlutterFlowTheme.of(context)
                                           .bodyLarge
                                           .override(
@@ -532,13 +546,30 @@ class _HomeWidgetState extends State<HomeWidget> {
                   ].divide(const SizedBox(width: 8.0)),
                 ),
               ),
+              Divider(
+                thickness: 3.0,
+                indent: 10.0,
+                endIndent: 10.0,
+                color: FlutterFlowTheme.of(context).primary,
+              ),
               Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 15.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 15.0, 0.0, 5.0),
                 child: Text(
                   'Ready to learn?',
                   style: FlutterFlowTheme.of(context).bodyLarge.override(
                         fontFamily: 'Readex Pro',
                         fontSize: 24.0,
+                        letterSpacing: 0.0,
+                      ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 10.0, 0.0),
+                child: Text(
+                  'Check out cool workshops and educational events avalaible nearby',
+                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                        fontFamily: 'Readex Pro',
+                        color: FlutterFlowTheme.of(context).secondaryText,
                         letterSpacing: 0.0,
                       ),
                 ),
@@ -552,7 +583,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                   textCapitalization: TextCapitalization.sentences,
                   obscureText: false,
                   decoration: InputDecoration(
-                    labelText: 'Search workshops',
+                    labelText: 'Search',
                     labelStyle:
                         FlutterFlowTheme.of(context).labelMedium.override(
                               fontFamily: 'Readex Pro',
@@ -671,8 +702,8 @@ class _HomeWidgetState extends State<HomeWidget> {
                                 topLeft: Radius.circular(8.0),
                                 topRight: Radius.circular(8.0),
                               ),
-                              child: Image.network(
-                                'https://freerangestock.com/sample/162656/corporate-workshop-with-colorful-sticky-notes.jpg',
+                              child: Image.asset(
+                                'assets/images/girl_on_wheelchair.jpg',
                                 width: double.infinity,
                                 height: 200.0,
                                 fit: BoxFit.cover,
