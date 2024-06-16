@@ -99,6 +99,16 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'home',
           path: '/home',
           builder: (context, params) => const HomeWidget(),
+        ),
+        FFRoute(
+          name: 'My_profile',
+          path: '/myProfile',
+          builder: (context, params) => const MyProfileWidget(),
+        ),
+        FFRoute(
+          name: 'pawBalance',
+          path: '/pawBalance',
+          builder: (context, params) => const PawBalanceWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

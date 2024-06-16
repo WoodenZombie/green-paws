@@ -58,6 +58,16 @@ class _ProfileWidgetState extends State<ProfileWidget> {
               context.pop();
             },
           ),
+          title: Text(
+            'Profile info',
+            style: FlutterFlowTheme.of(context).bodyLarge.override(
+                  fontFamily: 'Readex Pro',
+                  color: FlutterFlowTheme.of(context).secondaryBackground,
+                  fontSize: 20.0,
+                  letterSpacing: 0.0,
+                  fontWeight: FontWeight.w600,
+                ),
+          ),
           actions: const [],
           centerTitle: false,
           elevation: 0.0,
@@ -81,15 +91,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                         width: 80.0,
                         height: 80.0,
                         decoration: BoxDecoration(
-                          gradient: LinearGradient(
-                            colors: [
-                              FlutterFlowTheme.of(context).primary,
-                              const Color(0xFF60A8EE)
-                            ],
-                            stops: const [0.0, 1.0],
-                            begin: const AlignmentDirectional(1.0, -1.0),
-                            end: const AlignmentDirectional(-1.0, 1.0),
-                          ),
+                          color: FlutterFlowTheme.of(context).secondary,
                           shape: BoxShape.circle,
                         ),
                         child: Align(
@@ -100,7 +102,6 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                               width: 100.0,
                               height: 100.0,
                               decoration: const BoxDecoration(
-                                color: Color(0xFFF1F4F8),
                                 shape: BoxShape.circle,
                               ),
                               child: Padding(
@@ -655,16 +656,27 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                                       CrossAxisAlignment.center,
                                                   children: [
                                                     Container(
-                                                      width: 50.0,
-                                                      height: 50.0,
-                                                      clipBehavior:
-                                                          Clip.antiAlias,
-                                                      decoration: const BoxDecoration(
+                                                      decoration: BoxDecoration(
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .secondary,
                                                         shape: BoxShape.circle,
                                                       ),
-                                                      child: Image.network(
-                                                        'https://images.unsplash.com/photo-1654701473955-9aacc05202d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzNHx8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=60',
-                                                        fit: BoxFit.cover,
+                                                      child: Container(
+                                                        width: 50.0,
+                                                        height: 50.0,
+                                                        clipBehavior:
+                                                            Clip.antiAlias,
+                                                        decoration:
+                                                            const BoxDecoration(
+                                                          shape:
+                                                              BoxShape.circle,
+                                                        ),
+                                                        child: Image.network(
+                                                          'https://images.unsplash.com/photo-1654701473955-9aacc05202d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzNHx8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=60',
+                                                          fit: BoxFit.cover,
+                                                        ),
                                                       ),
                                                     ),
                                                     Padding(
@@ -710,7 +722,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                                               children: const [
                                                                 TextSpan(
                                                                   text:
-                                                                      '@username',
+                                                                      '@andrewdaniels',
                                                                   style:
                                                                       TextStyle(),
                                                                 ),
@@ -769,7 +781,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                                                   4.0,
                                                                   12.0),
                                                       child: Text(
-                                                        'I really had fun with you, guys, thank you so much for this opportunity and thanks ',
+                                                        'I really had fun with you, guys, thank you so much for this opportunity and thanks  ',
                                                         style:
                                                             FlutterFlowTheme.of(
                                                                     context)

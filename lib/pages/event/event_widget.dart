@@ -3,6 +3,7 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:expandable/expandable.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'event_model.dart';
 export 'event_model.dart';
 
@@ -61,8 +62,18 @@ class _EventWidgetState extends State<EventWidget> {
               context.pop();
             },
           ),
+          title: Text(
+            'Event info',
+            style: FlutterFlowTheme.of(context).bodyLarge.override(
+                  fontFamily: 'Readex Pro',
+                  color: FlutterFlowTheme.of(context).secondaryBackground,
+                  fontSize: 20.0,
+                  letterSpacing: 0.0,
+                  fontWeight: FontWeight.w600,
+                ),
+          ),
           actions: const [],
-          centerTitle: true,
+          centerTitle: false,
           elevation: 0.0,
         ),
         body: SafeArea(
@@ -87,7 +98,7 @@ class _EventWidgetState extends State<EventWidget> {
                               padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 15.0, 0.0, 0.0),
                               child: Text(
-                                'Clean Beach Trash',
+                                'Clean Riverside Trash',
                                 style: FlutterFlowTheme.of(context)
                                     .headlineMedium
                                     .override(
@@ -166,7 +177,7 @@ class _EventWidgetState extends State<EventWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .headlineSmall
                                       .override(
-                                        fontFamily: 'Open Sans',
+                                        fontFamily: 'Outfit',
                                         letterSpacing: 0.0,
                                       ),
                                 ),
@@ -227,6 +238,8 @@ class _EventWidgetState extends State<EventWidget> {
                       Divider(
                         height: 12.0,
                         thickness: 5.0,
+                        indent: 10.0,
+                        endIndent: 10.0,
                         color: FlutterFlowTheme.of(context).primary,
                       ),
                       Padding(
@@ -249,42 +262,60 @@ class _EventWidgetState extends State<EventWidget> {
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           children: [
-                            Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
-                                  2.0, 2.0, 12.0, 2.0),
-                              child: ClipRRect(
-                                borderRadius: BorderRadius.circular(12.0),
-                                child: Image.network(
-                                  'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60',
-                                  width: 80.0,
-                                  height: 80.0,
-                                  fit: BoxFit.cover,
+                            Container(
+                              decoration: const BoxDecoration(),
+                              child: Padding(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                    2.0, 2.0, 12.0, 2.0),
+                                child: InkWell(
+                                  splashColor: Colors.transparent,
+                                  focusColor: Colors.transparent,
+                                  hoverColor: Colors.transparent,
+                                  highlightColor: Colors.transparent,
+                                  onTap: () async {
+                                    context.pushNamed('profile');
+                                  },
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(12.0),
+                                    child: Image.network(
+                                      'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60',
+                                      width: 80.0,
+                                      height: 80.0,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
                                 ),
                               ),
                             ),
-                            Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
-                                  2.0, 2.0, 12.0, 2.0),
-                              child: ClipRRect(
-                                borderRadius: BorderRadius.circular(12.0),
-                                child: Image.network(
-                                  'https://images.unsplash.com/photo-1614436163996-25cee5f54290?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60',
-                                  width: 80.0,
-                                  height: 80.0,
-                                  fit: BoxFit.cover,
+                            Container(
+                              decoration: const BoxDecoration(),
+                              child: Padding(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                    2.0, 2.0, 12.0, 2.0),
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(12.0),
+                                  child: Image.network(
+                                    'https://images.unsplash.com/photo-1614436163996-25cee5f54290?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60',
+                                    width: 80.0,
+                                    height: 80.0,
+                                    fit: BoxFit.cover,
+                                  ),
                                 ),
                               ),
                             ),
-                            Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
-                                  2.0, 2.0, 12.0, 2.0),
-                              child: ClipRRect(
-                                borderRadius: BorderRadius.circular(12.0),
-                                child: Image.network(
-                                  'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60',
-                                  width: 80.0,
-                                  height: 80.0,
-                                  fit: BoxFit.cover,
+                            Container(
+                              decoration: const BoxDecoration(),
+                              child: Padding(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                    2.0, 2.0, 12.0, 2.0),
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(12.0),
+                                  child: Image.network(
+                                    'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60',
+                                    width: 80.0,
+                                    height: 80.0,
+                                    fit: BoxFit.cover,
+                                  ),
                                 ),
                               ),
                             ),
@@ -294,6 +325,8 @@ class _EventWidgetState extends State<EventWidget> {
                       Divider(
                         height: 12.0,
                         thickness: 5.0,
+                        indent: 10.0,
+                        endIndent: 10.0,
                         color: FlutterFlowTheme.of(context).primary,
                       ),
                       Padding(
@@ -324,10 +357,10 @@ class _EventWidgetState extends State<EventWidget> {
                         ),
                       ),
                       Padding(
-                        padding:
-                            const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 0.0, 4.0),
+                        padding: const EdgeInsetsDirectional.fromSTEB(
+                            16.0, 8.0, 0.0, 12.0),
                         child: Text(
-                          'San Diego, CA 91911',
+                          'Wybrzeze Helskie, Warsaw 03-459 Poland',
                           style: FlutterFlowTheme.of(context)
                               .labelLarge
                               .override(
@@ -340,6 +373,8 @@ class _EventWidgetState extends State<EventWidget> {
                       Divider(
                         height: 12.0,
                         thickness: 5.0,
+                        indent: 10.0,
+                        endIndent: 10.0,
                         color: FlutterFlowTheme.of(context).primary,
                       ),
                       Padding(
@@ -380,6 +415,19 @@ class _EventWidgetState extends State<EventWidget> {
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.w500,
                                           ),
+                                    ),
+                                  ),
+                                ),
+                                Align(
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
+                                  child: Padding(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                        10.0, 5.0, 0.0, 0.0),
+                                    child: FaIcon(
+                                      FontAwesomeIcons.paw,
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryText,
+                                      size: 24.0,
                                     ),
                                   ),
                                 ),

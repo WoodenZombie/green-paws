@@ -134,7 +134,7 @@ class _Auth2WidgetState extends State<Auth2Widget>
           : FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).secondary,
+        backgroundColor: FlutterFlowTheme.of(context).primary,
         body: SafeArea(
           top: true,
           child: Stack(
@@ -938,8 +938,11 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                     Container(
                                                       width: 230.0,
                                                       height: 40.0,
-                                                      decoration: const BoxDecoration(
-                                                        color: Colors.white,
+                                                      decoration: BoxDecoration(
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primary,
                                                       ),
                                                     ),
                                                   Text(
